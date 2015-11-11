@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-57.png">
+    <link rel="stylesheet" href='css/main.css' media="screen">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700' type='text/css'>
+    <title>Backbone Contacts Collections</title>
+  </head>
+  <body>
+
+    <h1>Backbone Contacts Collections</h1>
+
+    <main>
+      
+      <form id='contactsForm' name="contactsForm"></form>
+
+    </main>
+
+    <script type="text/template" id="contactsTemplate">
+      <div class="floatingPlaceholder"><input type="text" value="" id="nameFirst" name="nameFirst"><label for='nameFirst'>First Name</label></div>
+      <div class="floatingPlaceholder"><input type="text" value="" id="nameLast" name="nameLast"><label for='nameLast'>Last Name</label></div>
+      <div class="floatingPlaceholder"><input type="text" value="" id="email" name="email"><label for='email'>Email Address</label></div>
+      <div class="floatingPlaceholder"><input type="text" value="" id="phone" name="phone"><label for='phone'>Phone Number</label></div>
+      <div class="floatingPlaceholder"><input type="text" value="" id="twitter" name="twitter"><label for='twitter'>Twitter Handle</label></div>
+      <div class="floatingPlaceholder"><input type="text" value="" id="linkedin" name="linkedin"><label for='linkedin'>LinkedIn URL</label></div>
+      <div class="buttonContainer"><button type="submit" id="contactsSubmit">Add Contact</button></div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/models/contacts.js"></script>
+    <script src="js/views/contactsView.js"></script>
+    <script src="js/collections/contacts.js"></script>
+    <script src="js/placeholderFloat.js"></script>
+
+  </body>
+</html>

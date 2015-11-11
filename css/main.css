@@ -1,0 +1,347 @@
+/* Eric Meyer's reset
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0b1 | 201101 
+	NOTE: WORK IN PROGRESS
+	USE WITH CAUTION AND TEST WITH ABANDON */
+/* Use this reset as a starting point, and customize to your needs */
+/* Slightly modified to prevent anchor elements from losing outline, as in HTML5 Boilerplate */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+a {
+  background: transparent;
+  outline: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, time {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Meyer's reset ends here */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+b, strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+small {
+  font-size: 85%; }
+
+img {
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* For image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+.ir br {
+  display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+body {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
+
+html {
+  font-size: 14px; }
+
+/* Modules will scale with document */
+body {
+  font-size: 1rem; }
+
+input[type='text'], .floatingPlaceholder {
+  font-size: 16px;
+  line-height: 2.6em;
+  height: 2.6em;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+  background: #ffffff;
+  color: #292f33;
+  border: 0.5px solid rgba(136, 153, 166, 0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.floatingPlaceholder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; }
+  .floatingPlaceholder input[type='text'] {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: transparent;
+    z-index: 2;
+    text-indent: 20px;
+    width: 100%;
+    box-shadow: 3px 3px #66757f; }
+    .floatingPlaceholder input[type='text']:focus + label {
+      color: #8899a6; }
+  .floatingPlaceholder input[value] + label {
+    color: #ccc; }
+  .floatingPlaceholder label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 16px;
+    z-index: 1;
+    color: #f5f8fa;
+    -webkit-transform-origin: 0 0em;
+    -moz-transform-origin: 0 0em;
+    -ms-transform-origin: 0 0em;
+    -o-transform-origin: 0 0em;
+    -webkit-transition: -webkit-transform 160ms, color 200ms;
+    -moz-transition: -moz-transform 160ms, color 200ms;
+    -o-transition: -o-transform 160ms, color 200ms;
+    transition: transform 160ms, color 200ms;
+    -webkit-transform: scale(1, 1) rotateY(0);
+    -moz-transform: scale(1, 1) rotateY(0);
+    -ms-transform: scale(1, 1) rotateY(0);
+    -o-transform: scale(1, 1) rotateY(0);
+    transform: scale(1, 1) rotateY(0); }
+
+.float label {
+  -webkit-transform: scale(0.55, 0.55) rotateY(0);
+  -moz-transform: scale(0.55, 0.55) rotateY(0);
+  -ms-transform: scale(0.55, 0.55) rotateY(0);
+  -o-transform: scale(0.55, 0.55) rotateY(0);
+  transform: scale(0.55, 0.55) rotateY(0); }
+
+.float input {
+  line-height: 3.4em; }
+
+body {
+  font-size: 1rem;
+  background-color: #f5f8fa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0084b4; }
+
+form {
+  width: 80%;
+  min-width: 300px;
+  margin: 0 auto; }
+  form div {
+    text-align: center; }
+
+.buttonContainer {
+  width: 100%;
+  text-align: center; }
+
+button[type="submit"] {
+  padding: 5px 10px;
+  font-size: .8em;
+  text-decoration: none;
+  background-color: #0084b4;
+  color: #ffffff;
+  border: 0.5px solid rgba(136, 153, 166, 0.4);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  transition: all 600ms ease; }
+  button[type="submit"]:hover {
+    background-color: #0083b3;
+    background-image: -webkit-linear-gradient(top, #0083b3, #007099);
+    background-image: -moz-linear-gradient(top, #0083b3, #007099);
+    background-image: -o-linear-gradient(top, #0083b3, #007099);
+    background-image: -ms-linear-gradient(top, #0083b3, #007099);
+    background-image: linear-gradient(top, #0083b3, #007099); }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 13.5px; } }

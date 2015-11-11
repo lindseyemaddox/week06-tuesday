@@ -1,0 +1,59 @@
+input[type='text'], .floatingPlaceholder {
+	font-size: 16px;
+	line-height: 2.6em;
+	height: 2.6em;
+	width: 100%;
+	margin: 0 0 20px;
+	padding: 0;
+	background: $white;
+	color: $black;
+	@include border();
+	@include border-radius(5px);
+}
+.floatingPlaceholder {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	input[type='text'] {
+		font-size: 16px;
+		border: none;
+		outline: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		background: transparent;
+		z-index: 2;
+		text-indent: 20px;
+		width: 100%;
+		box-shadow: 3px 3px $secondary;
+		&:focus + label {
+			color: $tertiary;
+		}
+	}
+	input[value] + label {
+		color: #ccc;
+	}
+	label {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 20px;
+		font-size: 16px;
+		z-index: 1;
+		color: $background;
+		@include transformOrigin(0, 0em);
+		@include colorTransition(160ms, 200ms);
+		@include transformScale(1, 1, 0);
+	}
+}
+.float {
+	label {
+		@include transformScale(.55, .55, 0);
+	}
+	input {
+		line-height: 3.4em;
+	}
+}
+

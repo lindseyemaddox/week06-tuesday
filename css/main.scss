@@ -1,0 +1,53 @@
+$primary: 	#0084b4;
+$secondary:	#66757f;
+$tertiary:	#8899a6;
+$background:#f5f8fa;
+$black:		#292f33;
+$white:		#ffffff;
+
+@import 'common';
+@import 'mixins';
+@import 'fonts';
+@import 'placeholderFloat';
+
+body {
+  	font-size: 1rem;
+	background-color: $background;
+	@include regular();
+}
+h1 {
+	font-size: 3em;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 15px;
+	color: $primary;
+}
+form {
+	width: 80%;
+	min-width: 300px;
+	margin: 0 auto;
+	div {
+		text-align: center;
+	}
+}
+.buttonContainer {
+	width: 100%;
+	text-align: center;
+}
+button[type="submit"] {
+	padding: 5px 10px;
+	font-size: .8em;
+	text-decoration: none;
+	background-color: $primary;
+	color: $white;
+	@include border();
+	@include border-radius(5px);
+	@include bold();
+	@include transition();
+	&:hover {
+		@include gradient();
+	}
+}
+
+@import 'responsive';

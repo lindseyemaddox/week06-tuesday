@@ -1,0 +1,51 @@
+@mixin transition(){
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+@mixin colorTransition($x, $y){
+    -webkit-transition: -webkit-transform $x, color $y;
+    -moz-transition: -moz-transform $x, color $y;
+    -o-transition: -o-transform $x, color $y;
+    transition: transform $x, color $y;
+}
+@mixin transformScale($x, $y, $z){
+    -webkit-transform: scale($x, $y) rotateY($z);
+    -moz-transform: scale($x, $y) rotateY($z);
+    -ms-transform: scale($x, $y) rotateY($z);
+    -o-transform: scale($x, $y) rotateY($z);
+    transform: scale($x, $y) rotateY($z);
+}
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+@mixin border {
+	border: .5px solid rgba(136, 153, 166, .4);
+}
+@mixin border-radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin gradient ($origin: top, $start: #0083b3, $stop: #007099) {
+    background-color: $start;
+    background-image: -webkit-linear-gradient($origin, $start, $stop);
+    background-image: -moz-linear-gradient($origin, $start, $stop);
+    background-image: -o-linear-gradient($origin, $start, $stop);
+    background-image: -ms-linear-gradient($origin, $start, $stop);
+    background-image: linear-gradient($origin, $start, $stop);
+}
+@mixin mainBg {
+    background-color: $white;
+    @include border-radius(5px);
+    @include border();
+}
+@mixin transformOrigin ($x:center, $y:center) {
+    -webkit-transform-origin: $x $y;
+    -moz-transform-origin:    $x $y;
+    -ms-transform-origin:     $x $y;
+    -o-transform-origin:      $x $y;
+}

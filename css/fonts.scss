@@ -1,0 +1,22 @@
+html {
+  font-size: 14px;
+}
+
+/* Modules will scale with document */
+body {
+  font-size: 1rem;
+}
+
+
+@mixin regular {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+@mixin bold {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+@mixin heavy {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
